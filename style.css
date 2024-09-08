@@ -1,0 +1,1380 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #111;
+  background-image: url(https://trainthetrainer.guniguru.com/wp-content/uploads/2023/09/New-Project-1.webp);
+  background-position: top right;
+  background-repeat: repeat;
+  background-size: 100% auto;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+bold {
+  font-weight: bold;
+}
+linethrough {
+  text-decoration: line-through;
+  font-size: 20px;
+  font-weight: 500;
+}
+grad1,
+grad {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+grad {
+  font-size: 120%;
+  border-bottom: 1px white dashed;
+}
+.pgcolor {
+  background: linear-gradient(to right, #cfa355, #ffeac6);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.firstContainer {
+  padding: 0px 10px;
+}
+.firstContainerContentContainer {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.firstContainer h1,
+.secondContainer h1,
+.thirdContainer h1,
+.fourthContainer h1,
+.sixthContainer h1,
+.seventhContainer h1 {
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.3em;
+  text-align: center;
+  padding-top: 40px;
+}
+.firstContainerVideoContainer {
+  width: 100%;
+}
+.firstContainer p {
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.video-container {
+  background-image: url("https://trainthetrainer.guniguru.com/wp-content/uploads/2023/09/unnamed-2.jpg.webp");
+  height: 166px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.video-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: inherit;
+  transition: background-color 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  cursor: pointer;
+}
+#playButton {
+  cursor: pointer;
+}
+
+#videoPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+.durationLanguageDetailContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+.durationInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.infoContainer {
+  display: flex;
+  background-color: #9999991c;
+  border-radius: 10px;
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.15);
+  gap: 0.5rem;
+  padding: 10px 10px;
+  width: 50%;
+}
+.SvgContainer {
+  background-color: #000;
+  /* padding: 10px; */
+  border-radius: 15px;
+  height: 43px;
+  width: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SecondSvgContainer {
+  width: 43px !important;
+}
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.detailsContainer h3 {
+  font-size: 12px;
+  font-weight: 300;
+}
+.detailsContainer h3,
+.detailsContainer p {
+  font-family: Sans-serif;
+  color: #fff;
+}
+.detailsContainer p {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+.mainButton {
+  fill: #000;
+  color: #000;
+  padding: 15px 15px 12px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ba934c 0%, #ffe8b9 100%);
+  border-style: solid;
+  border-width: 0 0 5px;
+  border-color: #be9852;
+  border-radius: 50px;
+  box-shadow: 20px 30px 100px 0px
+    rgba(228, 178.00000000000003, 86.00000000000004, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.mainButton h3 {
+  font-weight: 900;
+  font-family: Sans-serif;
+  font-size: 19px !important;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+.mainButton p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: Sans-serif;
+}
+.firstContainer h4 {
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25em;
+  text-align: center;
+}
+.secondContainer {
+  padding-bottom: 50px;
+}
+
+.thirdContainer {
+  padding-bottom: 20px;
+}
+.thirdContainer h1 {
+  padding-bottom: 25px;
+}
+.thirdContainerListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.thirdContainerFirstThreeListContainer,
+.thirdContainerSecondThreeListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.ListContainer {
+  display: flex;
+  background-color: #9999991c;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #c0c0c026;
+  padding: 10px;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.ListContainer p {
+  font-family: Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+  width: 80%;
+  line-height: 1.5rem;
+}
+.fourthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.fourthContainerImgContainer {
+  height: 157px;
+  width: 280px;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.fourthContainerImg {
+  height: 157px;
+  width: 280px;
+}
+.fifthContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.fifthContainerImg1 {
+  height: 71px;
+  width: 165px;
+}
+.fifthContainerImg2 {
+  height: 83px;
+  width: 165px;
+}
+.fifthContainer h2 {
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+.sixthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.sixthContainer h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.sixthContainerVideoContainer {
+  padding: 15px;
+}
+.sixthContainerVideoContainer iframe {
+  width: 270px;
+  height: 151px;
+  border-radius: 20px;
+}
+.seventhContainer h1 {
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.seventhContainerCard {
+  height: 118px;
+  width: 92%;
+  background-color: #99999924;
+  box-shadow: 8px 7px 0px -4px #be9852;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 1rem;
+}
+.seventhContainerFirstTwoCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.seventhContainerThirdCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seventhContainerCard img {
+  height: 45px;
+  width: 70px;
+}
+.seventhContainer {
+  padding-bottom: 50px;
+}
+.seventhContainerCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.seventhContainerCardHeadingParaContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.seventhContainerCardHeadingParaContainer h6 {
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.seventhContainerCardHeadingParaContainer p {
+  color: #fff;
+  font-family: "Sora", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+.eighthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.eighthContainer h1 {
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.eighthContainerCard {
+  height: 100%;
+  width: 100%;
+}
+.eighthContainerCard img {
+  width: 250px;
+  height: 143px;
+}
+.eighthContainerCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+}
+.eighthContainerFirstThreeCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.eighthContainerTwoCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 20px;
+}
+.ninthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 30px;
+}
+.ninthContainer h1 {
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4em;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.fourthContainer {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #041321 0%, #05161e 100%);
+  border-top: 2px solid white;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 50px;
+  width: 100%;
+  padding-bottom: 120px;
+}
+.fourthContainerFirstCard {
+  margin-top: 30px;
+}
+.fourthContainerCardMainHeading h1 {
+  background-color: #ca0000;
+}
+.fourthContainerSecondCardMainHeading h1 {
+  background-color: #16ca00;
+}
+.fourthContainerCardMainHeading h1,
+.fourthContainerSecondCardMainHeading h1 {
+  font-family: "Khand", Sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  fill: #ffffff;
+  color: #ffffff;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  border-radius: 24px 24px 0px 0px;
+}
+.metaAdsWithoutGuidancePointsContainer {
+  border: 2px solid #ca0000;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ff00001c 0%, #f2295b14 100%);
+  position: relative;
+  z-index: 99;
+}
+.metaAdsWithGuidancePointsContainer {
+  border: 2px solid #16ca00;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #5eff001c 0%, #2af22914 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 99;
+}
+.metaAdsWithoutGuidancePointsContainer::before,
+.metaAdsWithGuidancePointsContainer::before {
+  background-size: 225px auto;
+  opacity: 0.2;
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-12.svg);
+}
+.metaAdsWithoutGuidancePointsContainer::before,
+.metaAdsWithGuidancePointsContainer::before,
+.fifthContainer::before,
+.seventhContainer::before,
+.eightContainerContentContainer::before,
+.twelvethContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+  mix-blend-mode: initial;
+}
+.metaAdsWithoutGuidancePointsContainer span,
+.metaAdsWithGuidancePointsContainer span {
+  display: flex;
+  align-items: center;
+}
+.metaAdsWithoutGuidancePointsContainer p,
+.metaAdsWithGuidancePointsContainer p,
+.fifthContainer p {
+  color: #e2e2e2;
+  transition: color 0.3s;
+  font-family: "Outfit", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.fifthContainer {
+  background-color: #07090a;
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2023/03/gradient-shapes-bg.png);
+  background-position: top left;
+  background-size: 100% auto;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* z-index: 999999999; */
+  position: relative;
+  width: 100%;
+}
+.metaAdsWithoutGuidancePointsContainer::before,
+.metaAdsWithGuidancePointsContainer::before,
+.fifthContainer::before,
+.seventhContainer::before,
+.eightContainerContentContainer::before,
+.ninthContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+  mix-blend-mode: initial;
+}
+.fifthContainer::before {
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-12.svg);
+  background-position: 11% -67px;
+  background-repeat: repeat;
+  background-size: 233px auto;
+  opacity: 0.06;
+}
+.fifthContainer h1 {
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  /* font-size: 35px; */
+  font-size: 23px;
+  line-height: 1.4em;
+  font-weight: 600;
+  /* line-height: 44px; */
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  text-align: center;
+  padding: 0px 25px;
+}
+.fifthContainerCardsContainer {
+  display: flex;
+  flex-direction: column;
+  /* gap: 3rem; */
+  padding-top: 25px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.pipeLineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pipeLine {
+  background-color: transparent;
+  /* left: 50%; */
+  left: 47.7%;
+  position: absolute;
+  top: 0px;
+  bottom: 140.6px;
+  width: 4px;
+  transform: translateX(-50%);
+  background-image: linear-gradient(180deg, #00213f 0%, #f2295b);
+}
+.pipeLineInner {
+  background: #111;
+  transition: height 0.5s ease-in-out;
+}
+.pipeLineDiv {
+  background-color: #090512;
+  border-radius: 50%;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardContainer {
+  background-color: #00000059;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #c6c6c626;
+  border-radius: 11px 11px 11px 11px;
+  color: #b5b5b5;
+  padding: 20px 20px 20px 20px;
+  /* padding: 34px 34px 34px 34px; */
+}
+.fifthContainer h2 {
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  /* font-size: 23px; */
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.25s linear 0s;
+}
+.metaAdsWithoutGuidancePointsContainer p,
+.metaAdsWithGuidancePointsContainer p,
+.fifthContainer p {
+  color: #e2e2e2;
+  transition: color 0.3s;
+  font-family: "Outfit", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.fifthContainer p {
+  padding-left: 0px !important;
+}
+.emptyCardContainer {
+  height: 100%;
+  width: 82%;
+}
+.mobilecardContainer {
+  background-color: #00000059;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #c6c6c626;
+  border-radius: 11px 11px 11px 11px;
+  color: #b5b5b5;
+  padding: 20px 20px 20px 20px;
+  display: none;
+}
+.tenthContainer {
+  background-color: black;
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/Beige-Neutral-Minimalist-Photo-Collage-1-1.png);
+  background-position: center top;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  padding-top: 470px;
+}
+
+.tenthContainer::before {
+  content: "";
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #e0862845 0%, #05161e 86%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.mentorNameContainer h2 {
+  font-size: 23px;
+  line-height: 1.2em;
+  color: #ffffff;
+  font-family: "Mulish", Sans-serif;
+  /* font-size: 48px; */
+  font-weight: 500;
+  text-transform: uppercase;
+  /* line-height: 1.2em; */
+  background-color: transparent;
+  margin-top: -132px;
+}
+.mentorNameContainer h3 {
+  font-family: "Mulish", Sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  background-color: #05161e;
+  padding: 10px;
+}
+.mentorNameContainer {
+  margin: 0px 0px 0px 0px;
+  padding: 11px 11px 11px 11px;
+  z-index: 9999;
+  position: relative;
+  background-color: black;
+}
+.aboutMentorContainer p {
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.9em;
+  text-shadow: 0px 0px 41px rgba(0, 0, 0, 0.64);
+}
+.aboutMentorContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.eleventhContainer {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #041321 0%, #05161e 100%);
+  position: relative;
+  padding-bottom: 50px;
+  z-index: 9999999;
+  position: relative;
+}
+.eightContainerCardsFirstContainer,
+.eightContainerCardsSSecondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.eightContainerCardsSSecondContainer {
+  margin-top: 3rem;
+}
+.eightContainerContentContainer::before {
+  content: "";
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-13.svg);
+  background-position: bottom center;
+  background-repeat: repeat;
+  background-size: 495px auto;
+  opacity: 0.2;
+}
+.eightContainerContentContainer h2 {
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3em;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.Card {
+  background-color: transparent;
+  background-image: linear-gradient(35deg, #ffffff14 0%, #f2295b12 100%);
+  border: 1px solid #ffffff1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  width: 90%;
+  border-radius: 15px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.Card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px 8px 8px 8px;
+}
+.Card h3 {
+  text-transform: uppercase;
+  font-family: "Syne", Sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
+.Card p {
+  color: #ebebeb;
+  font-family: "Outfit", Sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  width: 100%;
+}
+.twelvethContainer {
+  background-color: #07090a;
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2023/03/gradient-shapes-bg.png);
+  background-position: top left;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 9;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.twelvethContainer::before {
+  background-image: url(https://lp1.learnmize.in/wp-content/uploads/2024/07/ooorganize-12.svg);
+  background-position: 11% -67px;
+  background-repeat: repeat;
+  background-size: 233px auto;
+  opacity: 0.06;
+}
+.twelvethContainer h1 {
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.7em;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px !important;
+}
+.faq-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 41px !important;
+  justify-content: center;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+.faqAllContentContainer {
+  width: 90%;
+}
+.faq-item {
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 22px;
+  border: 1px solid #ffffff36;
+  border-radius: 3px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: #ffffff0d;
+  padding: 18px 18px 18px 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  color: white !important;
+  line-height: 2em;
+  font-family: "Outfit", Sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+  transform-origin: bottom;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  background-color: #ffffff21;
+  color: #ffffff;
+  font-family: "Outfit", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+.faq-answer p {
+  width: 100%;
+  padding-top: 7px;
+}
+.sticky-footer {
+  background-size: initial;
+  background-blend-mode: soft-light;
+  background-image: url(https://purnamcommunity.in/wp-content/uploads/2024/01/img20-1.png) !important;
+  margin-bottom: 0px;
+  z-index: 999999999999999999999999999;
+  box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.3);
+  width: 100% !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  background-position: 50%;
+  transition: opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sticky-footer.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footerContainer {
+  display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+  justify-content: center;
+  gap: 2rem;
+}
+.sticky-footer h5 {
+  color: #fff;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 700;
+  line-height: 1.25em;
+  margin: 0px;
+  padding-bottom: 5px;
+  font-size: 27px;
+}
+.sticky-footer span {
+  font-size: 27px;
+}
+.offerTimerPara {
+  display: flex;
+  gap: 0.3rem;
+}
+.offerTimerPara p {
+  color: #fff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  line-height: 1.4em;
+}
+.footerButton {
+  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+  fill: #000;
+  color: #000;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #ba934c 0%, #ffe8b9 100%);
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.3em;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+.imageSliderContainer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
+  overflow: hidden !important;
+}
+.imageSlider {
+  display: flex;
+  gap: 3rem;
+  width: calc(250px * 18);
+  /* animation: scroll 40s linear infinite; */
+}
+.imageSlider img {
+  height: 77px;
+  width: 177px;
+}
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+} */
+@media (min-width: 1024px) {
+  .firstContainerContentContainer {
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    gap: 2rem;
+  }
+  .video-container {
+    height: 329px;
+    width: 100%;
+  }
+  .firstContainer h1,
+  .secondContainer h1,
+  .thirdContainer h1,
+  .fourthContainer h1,
+  .sixthContainer h1,
+  .seventhContainer h1 {
+    /* font-size: 40px; */
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.4em;
+  }
+  .firstContainerVideoContainer {
+    width: 50%;
+  }
+  .firstContainer p {
+    font-size: 22px;
+  }
+  .firstContainer h1 {
+    width: 56%;
+  }
+  .firstContainerPara {
+    padding-bottom: 30px !important;
+  }
+  .firstContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detailsContainer h3 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .detailsContainer p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .SecondSvgContainer {
+    width: 54px !important;
+    height: 54px !important;
+  }
+  .SvgContainer {
+    height: 54px;
+    width: 54px;
+  }
+  .infoContainer {
+    width: 42%;
+    gap: 1rem;
+  }
+  .durationInfoContainer {
+    width: 50%;
+  }
+  .mainButton p {
+    font-size: 15px !important;
+  }
+  .firstContainer h4 {
+    font-size: 17px;
+    margin-top: 0px;
+  }
+  .durationLanguageDetailContainer {
+    gap: 1.3rem;
+  }
+  .secondContainer {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondContainer h1,
+  .thirdContainer h1 {
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.4em;
+  }
+  .secondContainer h1 {
+    width: 70%;
+  }
+  .thirdContainerListContainer {
+    flex-direction: row;
+  }
+  .thirdContainerListContainer {
+    justify-content: flex-start;
+    width: 80%;
+  }
+  .ListContainer p {
+    font-size: 17px;
+  }
+  .ListContainer {
+    height: 90px;
+    width: 90%;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .thirdContainerFirstThreeListContainer,
+  .thirdContainerSecondThreeListContainer {
+    align-items: baseline;
+    width: 50%;
+  }
+  .sixthContainerAllVideoContainer {
+    display: flex;
+  }
+  .sixthContainerVideoContainer iframe {
+    height: 333px;
+    width: 460px;
+  }
+  .sixthContainer h1 {
+    padding-bottom: 30px;
+  }
+  .seventhContainerFirstTwoCardContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .seventhContainerCard {
+    width: 40%;
+  }
+
+  .seventhContainerCard img {
+    height: 105px;
+    width: 105px;
+  }
+  .seventhContainerFirstCardImg {
+    height: 82px !important;
+    width: 123px !important;
+  }
+  .seventhContainerCardHeadingParaContainer h6 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .seventhContainerCardHeadingParaContainer p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7em;
+  }
+  .eighthContainerCard img {
+    width: 315px;
+    height: 206px;
+  }
+  .eighthContainerFirstThreeCardContainer {
+    flex-direction: row;
+  }
+  .eighthContainerTwoCardContainer {
+    flex-direction: row;
+  }
+  .eighthContainerButtonContainer {
+    width: 50% !important;
+  }
+  .ninthContainerButtonContainer {
+    width: 38%;
+  }
+  .fourthContainer {
+    flex-direction: row;
+    padding-top: 80px;
+    justify-content: center;
+    padding-bottom: 190px;
+  }
+  .fourthContainerFirstCard,
+  .fourthContainerSecondCard {
+    width: 40%;
+  }
+  .fourthContainerCardMainHeading h1,
+  .fourthContainerSecondCardMainHeading h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .metaAdsWithoutGuidancePointsContainer::before,
+  .metaAdsWithGuidancePointsContainer::before {
+    background-size: 25% auto;
+    opacity: 0.09;
+  }
+  .metaAdsWithoutGuidancePointsContainer p,
+  .metaAdsWithGuidancePointsContainer p {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .thirdContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sticky-footer {
+    padding: 20px;
+  }
+  .sticky-footer.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .footerContainer {
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 180px;
+  }
+  .sticky-footer h5 {
+    font-size: 2rem !important;
+  }
+  .sticky-footer span {
+    font-size: 2rem !important;
+  }
+  .offerTimerPara {
+    gap: 1rem;
+  }
+  .offerTimerPara p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .footerButton {
+    font-size: 24px;
+    line-height: 1.1em;
+    padding: 20px 80px;
+  }
+  .fifthContainer {
+    /* z-index: 999999; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .fifthContainer h1 {
+    padding: 0px 0px;
+    font-size: 35px;
+    width: 34%;
+  }
+  .fifthContainerCardsContainer {
+    width: 85%;
+  }
+  .fifthContainerFirstCardContainer,
+  .fifthContainerSecondCardContainer,
+  .fifthContainerThirdCardContainer,
+  .fifthContainerFourthCardContainer,
+  .fifthContainerFifthCardContainer,
+  .fifthContainerSixthCardContainer {
+    display: flex;
+    /* gap: 1rem; */
+    /* padding: 0px 84px; */
+    width: 100%;
+    direction: rtl;
+    gap: 11rem;
+  }
+  .cardContainer {
+    direction: ltr;
+    width: 50%;
+    padding: 34px 34px 34px 34px;
+  }
+  .fifthContainer p {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  .emptyCardContainer {
+    width: 50%;
+  }
+  .sixthContainer {
+    padding-top: 0px;
+    background-position: bottom left;
+    background-size: 59% auto;
+    z-index: 999999;
+    position: relative;
+  }
+  .mentorNameContainer {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00000000 100%, #000000 100%);
+    position: relative;
+    width: 39%;
+    margin-left: 52rem !important;
+    padding-top: 23rem;
+    padding-bottom: 23rem;
+  }
+  .mentorNameContainer h2 {
+    font-size: 48px;
+    line-height: 1.2em;
+  }
+  .mentorNameContainer h3 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0px 0px 0px 0px;
+    padding: 11px 11px 11px 11px;
+    background-color: #05161e;
+    width: 100%;
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+  }
+  .aboutMentorContainer p {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .eightContainerContentContainer h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  .eightContainerCardsFirstContainer,
+  .eightContainerCardsSSecondContainer {
+    padding: 0px 159px;
+    flex-direction: row;
+  }
+  /* .Card {
+    height: 450px;
+  } */
+  .eleventhContainer {
+    z-index: 9;
+    position: relative;
+  }
+  .twelvethContainer h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .faq-question {
+    font-size: 19px;
+  }
+  .fifthContainerFirstCardContainer,
+  .fifthContainerThirdCardContainer,
+  .fifthContainerFifthCardContainer {
+    direction: ltr !important;
+  }
+  .pipeLineContainer {
+    position: absolute;
+    left: 50%;
+  }
+  .pipeLineDiv {
+    left: -61%;
+  }
+}
+@media (max-width: 361px) {
+  .SecondSvgContainer {
+    width: 65px !important;
+  }
+  .video-container {
+    height: 193px;
+    width: 100%;
+  }
+}
+@media (max-width: 374px) {
+  .pipeLine {
+    left: 5.6%;
+  }
+}
+@media (max-width: 428px) {
+  .pipeLine {
+    left: 5% !important;
+  }
+}
+@media (max-width: 768px) {
+  .pipeLine {
+    left: 2.5%;
+  }
+  .fifthContainerCardsContainer {
+    gap: 5rem;
+  }
+  .fifthContainerFirstCardContainer,
+  .fifthContainerSecondCardContainer,
+  .fifthContainerThirdCardContainer,
+  .fifthContainerFourthCardContainer,
+  .fifthContainerFifthCardContainer,
+  .fifthContainerSixthCardContainer {
+    display: flex;
+    direction: rtl;
+  }
+  .cardContainer {
+    direction: ltr;
+    width: 100%;
+  }
+  .emptyCardContainer {
+    width: auto;
+  }
+}
