@@ -28,7 +28,7 @@ linethrough {
 grad1,
 grad {
   background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  background-image: linear-gradient(62deg, #931515 0%, #ff0000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -37,7 +37,8 @@ grad {
   border-bottom: 1px white dashed;
 }
 .pgcolor {
-  background: linear-gradient(to right, #cfa355, #ffeac6);
+  /* background: linear-gradient(to right, #cfa355, #ffeac6); */
+  background-color: #ff0000;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -183,10 +184,11 @@ grad {
   color: #000;
   padding: 15px 15px 12px;
   background-color: transparent;
-  background-image: linear-gradient(180deg, #ba934c 0%, #ffe8b9 100%);
+  /* background-image: linear-gradient(180deg, #ba934c 0%, #ffe8b9 100%); */
+  background-color:  #ff0000;
   border-style: solid;
   border-width: 0 0 5px;
-  border-color: #be9852;
+  border-color: #9f1919;
   border-radius: 50px;
   box-shadow: 20px 30px 100px 0px
     rgba(228, 178.00000000000003, 86.00000000000004, 0.2);
@@ -966,12 +968,13 @@ grad {
   fill: #000;
   color: #000;
   background-color: transparent;
-  background-image: linear-gradient(90deg, #ba934c 0%, #ffe8b9 100%);
+  background-image: linear-gradient(90deg, #931515 0%, #ff0000 100%);
   border-radius: 15px;
   font-size: 16px;
   line-height: 1.3em;
   border-radius: 5px;
   padding: 15px 10px;
+  border: none;
 }
 .imageSliderContainer {
   margin-top: 40px;
