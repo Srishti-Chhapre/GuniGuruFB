@@ -1381,6 +1381,11 @@ grad {
     left: -61%;
   }
 }
+@media (max-width: 1300px) and (min-width:768px) {
+  .mentorNameContainer {
+    margin-left: 34rem !important;
+}
+}
 @media (max-width: 361px) {
   .SecondSvgContainer {
     width: 65px !important;
