@@ -19,6 +19,7 @@ h3 {
 }
 bold {
   font-weight: bold;
+  /* margin: 0px; */
 }
 linethrough {
   text-decoration: line-through;
@@ -189,7 +190,7 @@ grad {
   border-style: solid;
   border-width: 0 0 5px;
   border-color: #9f1919;
-  border-radius: 50px;
+  border-radius: 18px;
   box-shadow: 20px 30px 100px 0px
     rgba(228, 178.00000000000003, 86.00000000000004, 0.2);
   text-align: center;
@@ -253,6 +254,7 @@ grad {
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
 .ListContainer p {
   font-family: Sans-serif;
@@ -331,7 +333,7 @@ grad {
   height: 118px;
   width: 92%;
   background-color: #99999924;
-  box-shadow: 8px 7px 0px -4px #be9852;
+  box-shadow: 8px 7px 0px -4px #ff0000;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -1363,7 +1365,8 @@ grad {
     left: 2.5%;
   }
   .fifthContainerCardsContainer {
-    gap: 5rem;
+    gap: 3rem;
+    padding-top: 0px;
   }
   .fifthContainerFirstCardContainer,
   .fifthContainerSecondCardContainer,
